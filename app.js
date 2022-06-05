@@ -14,7 +14,7 @@ sgMail.setApiKey(API_KEY);
 app.post("/", (req, res) => {
   let { Timeline, ProjectType, Budget, Fullname, DevOrDeisgnAndDev, Email, } = req.body;
   const message = {
-    to: "jordaneddielinton93@hotmail.co.uk",
+    to: ["jordaneddielinton93@hotmail.co.uk", Email],
     from: "jordaneddielinton93@outlook.com",
     subject: "Jordans Freelance Service",
     text: `Project:${ProjectType}, Project-Type:${DevOrDeisgnAndDev},Budget:${Budget},Fullname:${Fullname},Time line:${Timeline}`,
