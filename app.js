@@ -2,7 +2,7 @@ var express = require("express");
 var cors = require("cors");
 var app = express();
 app.use(express.json());
-app.use(cors({ origin: "https://jordansfreelanceing.netlify.app/contact" }));
+app.use(cors({ origin: "https://jordansfreelanceing.netlify.app" }));
 
 require("dotenv").config();
 
